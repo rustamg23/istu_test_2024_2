@@ -1,0 +1,5 @@
+if(EXISTS "/Users/rustam/Documents/VSCODE/lastsem/LR1-main/build/main_test[1]_tests.cmake")
+  include("/Users/rustam/Documents/VSCODE/lastsem/LR1-main/build/main_test[1]_tests.cmake")
+else()
+  add_test(main_test_NOT_BUILT main_test_NOT_BUILT)
+endif()
