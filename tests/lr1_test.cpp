@@ -38,7 +38,7 @@ std::vector<float> loadFloatsFromFile(const std::string& filepath) {
 // Пример теста 1
 TEST_F(LR1T, ArraySize1025) {
 // Вызываем функцию checkAndTransform с тестовыми данными
-    std::vector<float> in = loadFloatsFromFile("../data/overflow.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/overflow.txt");
 
     Res output = checkAndTransform(in);
 // Проверяем ожидаемые результаты
@@ -99,8 +99,8 @@ TEST_F(LR1T, FewAndFirstCorrect) {
 
 // Пример теста 7
 TEST_F(LR1T, FaNFC_1) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase1.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes1.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase1.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes1.txt");
 
     Res output = checkAndTransform(in);
 
@@ -111,8 +111,8 @@ TEST_F(LR1T, FaNFC_1) {
 
 // Пример теста 8
 TEST_F(LR1T, FaNFC_2) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase2.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes2.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase2.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes2.txt");
 
     Res output = checkAndTransform(in);
 
@@ -123,8 +123,8 @@ TEST_F(LR1T, FaNFC_2) {
 
 // Пример теста 9
 TEST_F(LR1T, FaNFC_3) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase3.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes3.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase3.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes3.txt");
 
     Res output = checkAndTransform(in);
 
@@ -135,8 +135,8 @@ TEST_F(LR1T, FaNFC_3) {
 
 // Пример теста 10
 TEST_F(LR1T, FaNFC_4) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase4.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes4.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase4.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes4.txt");
 
     Res output = checkAndTransform(in);
 
@@ -147,8 +147,8 @@ TEST_F(LR1T, FaNFC_4) {
 
 // Пример теста 11
 TEST_F(LR1T, FaNFC_5) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase5.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes5.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase5.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes5.txt");
 
     Res output = checkAndTransform(in);
 
@@ -159,8 +159,8 @@ TEST_F(LR1T, FaNFC_5) {
 
 // Пример теста 12
 TEST_F(LR1T, FaNFC_6) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase6.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes6.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase6.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes6.txt");
 
     Res output = checkAndTransform(in);
 
@@ -171,8 +171,8 @@ TEST_F(LR1T, FaNFC_6) {
 
 // Пример теста 13
 TEST_F(LR1T, FaNFC_7) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase7.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes7.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase7.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes7.txt");
 
     Res output = checkAndTransform(in);
 
@@ -183,8 +183,8 @@ TEST_F(LR1T, FaNFC_7) {
 
 // Пример теста 14
 TEST_F(LR1T, FaNFC_8) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase8.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes8.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase8.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes8.txt");
 
     Res output = checkAndTransform(in);
 
@@ -195,8 +195,8 @@ TEST_F(LR1T, FaNFC_8) {
 
 // Пример теста 15
 TEST_F(LR1T, FaNFC_9) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase9.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes9.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase9.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes9.txt");
 
     Res output = checkAndTransform(in);
 
@@ -207,8 +207,8 @@ TEST_F(LR1T, FaNFC_9) {
 
 // Пример теста 16
 TEST_F(LR1T, FaNFC_10) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase10.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes10.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase10.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes10.txt");
 
     Res output = checkAndTransform(in);
 
@@ -219,8 +219,8 @@ TEST_F(LR1T, FaNFC_10) {
 
 // Пример теста 17
 TEST_F(LR1T, FaNFC_11) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase11.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes11.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase11.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes11.txt");
 
     Res output = checkAndTransform(in);
 
@@ -231,8 +231,8 @@ TEST_F(LR1T, FaNFC_11) {
 
 // Пример теста 18
 TEST_F(LR1T, FaNFC_12) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase12.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes12.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase12.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes12.txt");
 
     Res output = checkAndTransform(in);
 
@@ -243,8 +243,8 @@ TEST_F(LR1T, FaNFC_12) {
 
 // Пример теста 19
 TEST_F(LR1T, FaNFC_13) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase13.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes13.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase13.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes13.txt");
 
     Res output = checkAndTransform(in);
 
@@ -255,8 +255,8 @@ TEST_F(LR1T, FaNFC_13) {
 
 // Пример теста 20
 TEST_F(LR1T, FaNFC_14) {
-    std::vector<float> in = loadFloatsFromFile("../data/NormalCase14.txt");
-    std::vector<float> out = loadFloatsFromFile("../data/NormalCaseRes14.txt");
+    std::vector<float> in = loadFloatsFromFile("../../cases/NormalCase14.txt");
+    std::vector<float> out = loadFloatsFromFile("../../cases/NormalCaseRes14.txt");
 
     Res output = checkAndTransform(in);
 
