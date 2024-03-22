@@ -5,6 +5,7 @@
 #include <iterator>
 #include <sstream>
 #include <utility>
+#include <string>
 
 // Подробнее https://google.github.io/googletest/reference/testing.html
 

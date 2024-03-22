@@ -2,7 +2,8 @@
 #include <iostream>
 #include <cmath>
 #include <limits>
-using std::vector;
+#include <string>
+#include <vector>
 
 using namespace std;
 
