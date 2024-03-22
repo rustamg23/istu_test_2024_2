@@ -9,10 +9,9 @@
 
 
 int main() {
-    std::vector<float> arr = read_file("./data/path10r156.txt");
+    std::vector<float> arr = {12, 23, 45, -2222};
     Res output = checkAndTransform(arr);
     std::cout << "key: " << output.key << std::endl;
     std::cout << "key ind: " << output.key_index<< std::endl;
-    write_file(output.result, "./data/path10r156res.txt" );
     return 0;
 }
