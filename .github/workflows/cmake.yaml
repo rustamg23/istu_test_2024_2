@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and run tests
         run: |
-          cmake .
-          cd bin
-          cmake .. && make 
-          ./tests/lr1_tests
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ctest
