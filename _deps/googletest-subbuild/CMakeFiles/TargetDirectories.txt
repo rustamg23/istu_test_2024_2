@@ -1,3 +1,0 @@
-/Users/rustam/Documents/GitHub/istu_test_2024_2/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-/Users/rustam/Documents/GitHub/istu_test_2024_2/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/Users/rustam/Documents/GitHub/istu_test_2024_2/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
