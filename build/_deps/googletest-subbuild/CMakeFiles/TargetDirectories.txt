@@ -1,3 +1,0 @@
-/Users/rustam/Documents/VSCODE/lastsem/LR1-main/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-/Users/rustam/Documents/VSCODE/lastsem/LR1-main/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/Users/rustam/Documents/VSCODE/lastsem/LR1-main/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
