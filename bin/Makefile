@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/rustam/Downloads/LR1-main 2"
+CMAKE_SOURCE_DIR = /Users/rustam/Documents/GitHub/istu_test_2024_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/rustam/Downloads/LR1-main 2/bin"
+CMAKE_BINARY_DIR = /Users/rustam/Documents/GitHub/istu_test_2024_2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rustam/Downloads/LR1-main 2/bin/CMakeFiles" "/Users/rustam/Downloads/LR1-main 2/bin//CMakeFiles/progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rustam/Downloads/LR1-main 2/bin/CMakeFiles" 0
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/rustam/Documents/GitHub/istu_test_2024_2/CMakeFiles /Users/rustam/Documents/GitHub/istu_test_2024_2/bin//CMakeFiles/progress.marks
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rustam/Documents/GitHub/istu_test_2024_2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,109 +158,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lr1_lib
+# Convenience name for target.
+bin/CMakeFiles/LR1.dir/rule:
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/LR1.dir/rule
+.PHONY : bin/CMakeFiles/LR1.dir/rule
 
-# Build rule for target.
-lr1_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lr1_lib
-.PHONY : lr1_lib
-
-# fast build rule for target.
-lr1_lib/fast:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/lr1_lib.dir/build.make lib/CMakeFiles/lr1_lib.dir/build
-.PHONY : lr1_lib/fast
-
-#=============================================================================
-# Target rules for targets named LR1
-
-# Build rule for target.
-LR1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LR1
+# Convenience name for target.
+LR1: bin/CMakeFiles/LR1.dir/rule
 .PHONY : LR1
 
 # fast build rule for target.
 LR1/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/LR1.dir/build.make bin/CMakeFiles/LR1.dir/build
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/LR1.dir/build.make bin/CMakeFiles/LR1.dir/build
 .PHONY : LR1/fast
 
-#=============================================================================
-# Target rules for targets named lr1_tests
+main.o: main.cpp.o
+.PHONY : main.o
 
-# Build rule for target.
-lr1_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lr1_tests
-.PHONY : lr1_tests
+# target to build an object file
+main.cpp.o:
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/LR1.dir/build.make bin/CMakeFiles/LR1.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-# fast build rule for target.
-lr1_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lr1_tests.dir/build.make tests/CMakeFiles/lr1_tests.dir/build
-.PHONY : lr1_tests/fast
+main.i: main.cpp.i
+.PHONY : main.i
 
-#=============================================================================
-# Target rules for targets named gmock
+# target to preprocess a source file
+main.cpp.i:
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/LR1.dir/build.make bin/CMakeFiles/LR1.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
+main.s: main.cpp.s
+.PHONY : main.s
 
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
+# target to generate assembly for a file
+main.cpp.s:
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/LR1.dir/build.make bin/CMakeFiles/LR1.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -276,12 +223,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... LR1"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... lr1_lib"
-	@echo "... lr1_tests"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -293,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/rustam/Documents/GitHub/istu_test_2024_2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
